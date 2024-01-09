@@ -6,7 +6,7 @@ import eslintPlugin from "vite-plugin-eslint"
 // Exports from Nuxt
 export default defineNuxtConfig({
 	// Habilita o modo de DEV TOOLS no projeto - depuracao e etc
-	devtools: { enabled: true },
+	devtools: { enabled: false },
 
 	// Define o CSS global do projeto
 	css: ["@/assets/index.css"],
