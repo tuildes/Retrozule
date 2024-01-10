@@ -1,5 +1,5 @@
 <template>
-	<div class="wrapper d-flex align-center px-4">
+	<div class="wrapper d-flex align-center px-4 mb-4">
 		<a href="https://github.com/tuildes" class="title">TUILDES</a>
 		<v-spacer />
 		<div class="d-flex link">
