@@ -1,29 +1,30 @@
 <template>
 	<v-container fluid class="wrapper IBMPlex d-flex flex-column align-center">
-		<Navbar />
 		<!-- Text -->
 		<div class="text-content d-flex flex-column text-center">
-			<h1>Bem vindo ao Retrozule!</h1>
-			<h3>Esse é um site experimental de "Puzzles"</h3>
+			<h1>0. Introdução</h1>
 			<p>
-				Ele é pautado em pequenos desafios de procurar o proximo
-				<strong>link</strong> do novo level!
+				O jogo funciona de um jeito bem simples: caso você encontre a
+				solução, basta colocar no url da página!
 			</p>
+			<h4>Exemplo: se a resposta for LEVEL UM</h4>
+			<v-text-field
+				label=".../lvl/level-um"
+				variant="solo"
+				color="blue"
+				disabled
+				append-inner-icon="mdi-magnify"
+			></v-text-field>
 			<v-img
-				height="15vh"
-				alt="Menina de anime na chuva"
-				src="https://pa1.aminoapps.com/6861/89c21539c4de40010d44a84040459a2ae3a502f3r1-540-405_hq.gif"
+				alt="Mar em movimento"
+				height="17vh"
+				src="https://64.media.tumblr.com/5ef9b6637f207f03394c83880355c83b/tumblr_oppipsA23V1s4u80lo1_500.gif"
 			/>
-			<v-btn class="mt-1" variant="text" to="lvl/introducao">
-				Começar?
-			</v-btn>
 		</div>
 		<!-- Text -->
 	</v-container>
 </template>
 <script setup>
-// Imports
-import Navbar from "~/components/global/Navbar.vue"
 // Cabeçalhos da pagina
 useSeoMeta({
 	title: "Retrozule",
