@@ -1,36 +1,23 @@
-# Agenda Telefônica [C]
+# Retrozule
 
 ## Descrição
 
-> "_Agenda telefônica feita em C_"
+> "_desc_"
 
-Ela possui 4 "estados":
-
-1. Visualizar Lista
-2. Inserir um telefone
-3. Remover um telefone
-4. Sair
-
-**Obsevação**: Ela não guarda informações em arquivos, apenas temporárias durante a execução do programa :)
+texto
 
 ## Rodando a aplicação
 
 ```bash
 # Compilar programa:
 make;
-
-# Rodar programa:
-./programa;
-
-# Remover arquivos do makefile:
-make clean;
 ```
 
 ## Infos
 
-* **Tecnologias**: `C`
-* **Data**: 12/10/2023
+-   **Tecnologias**: `Vue3`, `Nuxt3`, `Vuetify3`, `Javascript`, `CSS`
+-   **Data**: 08/01/2023
 
 ---
 
-![dads](banner.png)
+![Banner escrito TUILDES com a Mai Sakurajima em cada lado](.github/banner.png)
