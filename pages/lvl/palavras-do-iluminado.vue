@@ -27,7 +27,7 @@
 // Cabeçalhos da pagina
 useSeoMeta({
 	title: "FIM!",
-	description: "Final do Retrolure",
+	description: "Final do Retrozule",
 })
 useHead({
 	htmlAttrs: {

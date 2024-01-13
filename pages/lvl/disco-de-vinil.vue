@@ -71,7 +71,7 @@ function changeMusic() {
 // Cabeçalhos da pagina
 useSeoMeta({
 	title: "Fase 05",
-	description: "Fase 05 de Retrolure",
+	description: "Fase 05 de Retrozule",
 })
 useHead({
 	htmlAttrs: {

@@ -28,7 +28,7 @@
 // Cabeçalhos da pagina
 useSeoMeta({
 	title: "Introdução",
-	description: "Introdução de Retrolure",
+	description: "Introdução de Retrozule",
 })
 useHead({
 	htmlAttrs: {

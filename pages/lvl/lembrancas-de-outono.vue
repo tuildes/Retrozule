@@ -30,7 +30,7 @@
 // Cabeçalhos da pagina
 useSeoMeta({
 	title: "Fase 02",
-	description: "Fase 02 de Retrolure",
+	description: "Fase 02 de Retrozule",
 })
 useHead({
 	htmlAttrs: {

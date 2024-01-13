@@ -51,7 +51,7 @@ function openDialog(char) {
 // Cabeçalhos da pagina
 useSeoMeta({
 	title: "Fase 04",
-	description: "Fase 04 de Retrolure",
+	description: "Fase 04 de Retrozule",
 })
 useHead({
 	htmlAttrs: {
