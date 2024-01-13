@@ -2,22 +2,58 @@
 	<v-container fluid class="wrapper IBMPlex d-flex flex-column align-center">
 		<!-- Text -->
 		<div class="text-content d-flex flex-column">
-			<h5 class="text-center">2. Nada no jornal</h5>
+			<h5 v-if="!correct" class="text-center">3. Nada no jornal</h5>
+			<h5 v-else class="text-center">Senha: bittersweet memories</h5>
 			<v-divider class="my-2"></v-divider>
 			<v-img
-				alt="Folheando um caderno em japonês"
-				src="https://i.pinimg.com/originals/3b/13/8c/3b138cfbb52c29b1aab2f55fbdd7f473.gif"
-				height="15vh"
+				alt="Jornal com vários recortes"
+				src="/images/jornal-5454.png"
+				height="50vh"
 				class="my-2"
 			/>
-			<v-otp-input v-model="secretInput" length="4" />
-			{{ secretInput }}
+			<v-otp-input
+				v-model="secretInput"
+				theme="dark"
+				:color="stateInput"
+				:loading="stateLoading"
+				:disabled="correct"
+				width="50%"
+				length="4"
+			/>
+			<div class="d-flex justify-center mt-2">
+				<v-btn
+					width="50%"
+					variant="outlined"
+					:disabled="correct"
+					@click="verifier"
+				>
+					Enviar
+				</v-btn>
+			</div>
 		</div>
 		<!-- Text -->
 	</v-container>
 </template>
 <script setup>
-const secretInput = ref("0000")
+const secretInput = ref("----")
+const stateInput = ref("white")
+const stateLoading = ref(false)
+const correct = ref(false)
+
+function verifier() {
+	stateLoading.value = true
+	stateInput.value = "white"
+	setTimeout(() => {
+		stateLoading.value = false
+		if (secretInput.value == "7834") {
+			correct.value = true
+			stateInput.value = "success"
+		} else {
+			stateInput.value = "error"
+		}
+	}, 2000)
+}
+
 // Cabeçalhos da pagina
 useSeoMeta({
 	title: "Retrozule",
