@@ -1,22 +1,28 @@
 # Retrozule
 
-## Descrição
+## 🐦‍⬛ Descrição
 
-> "_desc_"
+> "_Um webjogo de puzzles envolvendo fáceis desafios de manipulação de url e html em uma temática retro_"
 
-texto
+![Print da Index de Retrozule](.github/print.png)
 
-## Rodando a aplicação
+## ☁️ Rodando a aplicação
 
 ```bash
-# Compilar programa:
-make;
+# Instalando e usando NODE 20:
+nvm install 20; nvm use 20;
+
+# Instalando dependências do projeto
+npm install;
+
+# Rodando o Retrozule
+npm run dev;
 ```
 
-## Infos
+## 🚀 Infos
 
 -   **Tecnologias**: `Vue3`, `Nuxt3`, `Vuetify3`, `Javascript`, `CSS`
--   **Data**: 08/01/2023
+-   **Data**: 13/01/2023
 
 ---
 
