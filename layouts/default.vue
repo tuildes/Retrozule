@@ -1,42 +1,38 @@
 <template>
 	<v-app class="wrapper">
-		<ClientOnly>
-			<section class="d-none d-lg-flex">
-				<!-- Table -->
-				<div class="table" />
-				<!-- Table -->
-				<!-- Background CRT -->
-				<v-img
-					class="background"
-					alt="Quarto com uma televisão antiga"
-					width="100vw"
-					height="90vh"
-					contain
-					draggable="false"
-					lazy-src="/images/crt_monitor_lazy.png"
-					src="/images/crt_monitor.png"
-				/>
-				<!-- Background CRT -->
-				<!-- Page Content -->
-				<div class="content">
-					<div class="vhs" />
-					<div class="black-border" />
-					<div
-						class="page-content d-flex justify-center align-center"
-					>
-						<NuxtPage />
-					</div>
-					<div class="black-border" />
+		<section class="d-none d-lg-flex">
+			<!-- Table -->
+			<div class="table" />
+			<!-- Table -->
+			<!-- Background CRT -->
+			<v-img
+				class="background"
+				alt="Quarto com uma televisão antiga"
+				width="100vw"
+				height="90vh"
+				contain
+				draggable="false"
+				lazy-src="/images/crt_monitor_lazy.png"
+				src="/images/crt_monitor.png"
+			/>
+			<!-- Background CRT -->
+			<!-- Page Content -->
+			<div class="content">
+				<div class="vhs" />
+				<div class="black-border" />
+				<div class="page-content d-flex justify-center align-center">
+					<NuxtPage />
 				</div>
-				<!-- Page Content -->
-			</section>
-			<section
-				class="d-flex d-lg-none justify-center align-center"
-				style="height: 100vh"
-			>
-				<Mobile />
-			</section>
-		</ClientOnly>
+				<div class="black-border" />
+			</div>
+			<!-- Page Content -->
+		</section>
+		<section
+			class="d-flex d-lg-none justify-center align-center"
+			style="height: 100vh"
+		>
+			<Mobile />
+		</section>
 	</v-app>
 </template>
 
