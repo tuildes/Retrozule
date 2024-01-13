@@ -24,7 +24,7 @@
 					Tocando agora: <b>{{ music }}</b>
 				</span>
 				<v-progress-linear
-					model-value="20"
+					:model-value="progress"
 					color="blue"
 					stream
 					class="mt-4"
@@ -40,6 +40,7 @@
 </template>
 <script setup>
 const numChanges = ref(0)
+const progress = ref(35)
 const musicList = [
 	"God`s Plan - Drake",
 	"The Lord And Me - Yung Li",
@@ -51,6 +52,7 @@ const musicList = [
 	"Mona Lisa - Dominic Fike",
 	"rockstar - Post Malone",
 	"Carta de um Anjo - Menestrel",
+	"me encontra lá :) - Gab Ferreira",
 ]
 const morse = ref(false)
 const music = ref("me encontra lá :) - Gab Ferreira")
@@ -59,15 +61,17 @@ function changeMusic() {
 	numChanges.value++
 	if (numChanges.value > 18) {
 		morse.value = true
+		progress.value = 100
 		music.value = "??? - ???"
 	} else {
+		progress.value = Math.random() * 100
 		music.value = musicList[Math.floor(Math.random() * musicList.length)]
 	}
 }
 // Cabeçalhos da pagina
 useSeoMeta({
-	title: "Retrozule",
-	description: "Site experimental de puzzles",
+	title: "Fase 05",
+	description: "Fase 05 de Retrolure",
 })
 useHead({
 	htmlAttrs: {

@@ -50,8 +50,8 @@ function openDialog(char) {
 }
 // Cabeçalhos da pagina
 useSeoMeta({
-	title: "Retrozule",
-	description: "Site experimental de puzzles",
+	title: "Fase 04",
+	description: "Fase 04 de Retrolure",
 })
 useHead({
 	htmlAttrs: {

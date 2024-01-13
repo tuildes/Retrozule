@@ -44,8 +44,8 @@
 <script setup>
 // Cabeçalhos da pagina
 useSeoMeta({
-	title: "Retrozule",
-	description: "Site experimental de puzzles",
+	title: "Fase 01",
+	description: "Fase 01 de Retrolure",
 })
 useHead({
 	htmlAttrs: {

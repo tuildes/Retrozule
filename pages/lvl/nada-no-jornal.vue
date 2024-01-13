@@ -56,8 +56,8 @@ function verifier() {
 
 // Cabeçalhos da pagina
 useSeoMeta({
-	title: "Retrozule",
-	description: "Site experimental de puzzles",
+	title: "Fase 03",
+	description: "Fase 03 de Retrolure",
 })
 useHead({
 	htmlAttrs: {
