@@ -1,8 +1,11 @@
-# Retrozule
-
-## Descrição
-
-> "_Um webjogo de puzzles envolvendo fáceis desafios de manipulação de url e html em uma temática retro_"
+<p align="center">
+  <h3 align="center">Retrozule</h3>
+  <p align="center">Um webjogo de puzzles envolvendo fáceis desafios de manipulação de url e html em uma temática retro</p>
+  <p align="center">
+    <img src="https://img.shields.io/github/languages/count/tuildes/Retrozule" />
+    <img src="https://img.shields.io/github/languages/code-size/tuildes/Retrozule" />
+  </p>
+</p>
 
 ![Print da Index de Retrozule](.github/print.png)
 
